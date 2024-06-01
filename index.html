@@ -70,10 +70,14 @@
         <div class="button">
           <button class="card__icon-button">
             <svg 
-              сlass="like-icon"
-              xmlns="http://www.w3.org/2000/svg" 
+              aria-hidden="true"
+              class="like-icon"
               width="39" 
-              height="36">
+              height="36"
+              viewBox="0 0 39 36"
+              fill="transparent"
+              xmlns="http://www.w3.org/2000/svg" 
+            >
               <g class="heart">
                 <path 
                   class="contour"
@@ -100,32 +104,44 @@
         </div>
       </section>
       <section class="save">
-        <button class="save-button buttons">
-          <svg viewBox="0 0 28 28" class="floppy">
+        <button
+          class="save-button buttons"
+          type="button"
+          onclick="window['dialog-id'].showModal();"
+          aria-controls="dialog-id"
+        >
+          <svg 
+            viewBox="0 0 21 21"
+            width="28"
+            height="28" 
+            class="floppy">
             <use class="floppy" href="./svg/дискета.svg#floppy"></use>
           </svg>
           <span class="button__text button__text-save">Сохранить на память</span>
-        </button> 
-        <dialog id="dialog-id" class="dialog">>
-          <div class="save-block">
-            <svg viewBox="0 0 500 500" class="floppy">
-              <use class="floppy" href="./svg/дискета.svg#floppy"></use>
-            </svg>
-            <h2 class="button__text-save">Вставьте дискету, чтобы продолжить</h2>
-          </div>
-          <form method="dialog">
-            <button
-              class="buttons save-button"
-              type="button"
-              onclick="window['dialog-id'].close();"
-              aria-controls="dialog-id"
-            >
-              <span class="button__text-save">OK</span>
-            </button>
-          </form>
-      </dialog>
-      </section>
+        </button>
+      </section> 
     </main>
+      <dialog id="dialog-id" class="dialog">
+        <div class="save-block">
+          <svg 
+            width="39"
+            height="39"
+            class="floppy">
+            <use class="floppy" href="./svg/дискета.svg#floppy"></use>
+          </svg>
+          <h2 class="button__text-save">Вставьте дискету, чтобы продолжить</h2>
+        </div>
+        <form method="dialog">
+          <button
+            class="buttons save-button-dialog"
+            type="button"
+            onclick="window['dialog-id'].close();"
+            aria-controls="dialog-id"
+          >
+            <span class="button__text-save">OK</span>
+          </button>
+        </form>
+      </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

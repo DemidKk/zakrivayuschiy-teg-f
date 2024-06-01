@@ -232,7 +232,7 @@ main {
   align-items: center;
   justify-content: end;
   border: 2px solid var(--main-color);
-  padding: 0;
+  padding: 15px 20.5px;
 }
 
 .buttons {
@@ -275,8 +275,61 @@ main {
   mix-blend-mode: difference;
 }
 
-.button__text-save {
-  margin: 0 19px 15px;
+.dialog[open] {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  gap: 28px;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  padding: 30px 42px;
+  margin: 0;
+}
+
+.dialog[open]::backdrop {
+  background-color: rgb(0 0 0 /0.75);
+}
+
+.save-block {
+  display: flex;
+  gap: 20px;
+  max-width: 293px;
+}
+
+.save-block .floppy {
+  width: 39px;
+  height: 39px;
+}
+
+.save-block .button__text-save {
+  font-family: var(--acsent-font);
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 234px;
+}
+
+.save-text {
+  width: 201px;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--main-color);
+}
+
+.save-button-dialog {
+  font-family: var(--acsent-font);
+  font-size: 14px;
+  line-height: 90%;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  padding: 12.5px 114.5px;
 }
 
 
@@ -326,7 +379,7 @@ main {
     padding: 9px 126px;
   }
 
-  .button__text_disket {
+  .button__text_floppy {
     margin: 0;
   }
 

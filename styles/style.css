@@ -278,12 +278,9 @@ main {
 .dialog[open] {
   position: fixed;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   top: 50%;
   left: 50%;
-  gap: 28px;
   transform: translate(-50%, -50%);
   background-color: var(--bg-color);
   border: 2px solid var(--main-color);
@@ -299,6 +296,9 @@ main {
   display: flex;
   gap: 20px;
   max-width: 293px;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 30px;
 }
 
 .save-block .floppy {
@@ -329,7 +329,8 @@ main {
   line-height: 90%;
   color: var(--main-color);
   border: 2px solid var(--main-color);
-  padding: 12.5px 114.5px;
+  padding: 9px 17px;
+  width: 100%;
 }
 
 
@@ -386,4 +387,39 @@ main {
   .floppy {
     width: 22px;
   }
+}
+
+/* Фильтры */
+
+.img-card-1 {
+  filter: contrast(120%);
+}
+
+.img-card-2 {
+  filter: brightness(120%);
+}
+
+.img-card-3 {
+  filter: invert(1);
+}
+
+.img-card-4 {
+  filter: saturate(150%);
+}
+
+.img-card-5 {
+  filter: blur(2px);
+}
+
+.img-card-6 {
+  filter: contrast(120%);
+  filter: brightness(120%);
+}
+
+.img-card-7 {
+  filter: hue-rotate(121deg);
+}
+
+.img-card-8 {
+  filter: grayscale(80%);
 }

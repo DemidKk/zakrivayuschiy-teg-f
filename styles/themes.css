@@ -14,3 +14,48 @@
     --weight-text: 465;
     --weight-title: 785;
 }
+
+:root.theme-light {
+    --acsent-font: "PressStart2P", fantasy;
+    --main-font: "Inter", sans-serif;
+    --card-font: "Inter", sans-serif;
+    --main-color: black;
+    --bg-color-1: #d3d3d3;
+    --bg-color-2: #e7e7e7;
+    --bg-color-3: #1a1a1a;
+    --bg-color: white;
+    --button-color: white;
+    --heart-color: red;
+    --weight-text: 400;
+    --weight-title: 700;
+}
+
+@media (prefers-color-scheme: dark) { 
+    :root {
+        --main-color: #00CC14;
+        --bg-color-1: #000;
+        --bg-color-2: #007f0c;
+        --bg-color-3: #004306;
+        --bg-color: black;
+        --button-color: #00CC14;
+        --weight-text: 465;
+        --weight-title: 785;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --acsent-font: "PressStart2P", fantasy;
+        --main-font: "Inter", sans-serif;
+        --card-font: "Inter", sans-serif;
+        --main-color: black;
+        --bg-color-1: #d3d3d3;
+        --bg-color-2: #e7e7e7;
+        --bg-color-3: #1a1a1a;
+        --bg-color: white;
+        --button-color: white;
+        --heart-color: red;
+        --weight-text: 400;
+        --weight-title: 700;
+    }
+}

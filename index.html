@@ -15,7 +15,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="link">&lt;/html&gt;</a>
+      <a class="link">&lt;/html&gt;</a>
       <h1 class="title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -54,7 +54,7 @@
           Фритрек и нулевой спринт:<span>Подготовка к работе</span>
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-1" src="./images/1.jpg">
+          <img class="img-card img-card-1" src="./images/1.jpg" alt="луффи из аниме ванпис широко улыбается">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -108,7 +108,7 @@
           1 спринт: Я — чистый лист
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-2" src="./images/2.png">
+          <img class="img-card img-card-2" src="./images/2.png" alt=" маленький луффи из аниме ванпис широко улыбается с закрытми глазами">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -160,7 +160,7 @@
           1 спринт: А если не получится?</span>
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-3" src="./images/3.jpg">
+          <img class="img-card img-card-3" src="./images/3.jpg" alt="луффи из аниме ванпис в недопонимании">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -212,7 +212,7 @@
           2 спринт: Погоня за идеалом</span>
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-4" src="./images/4.jpg">
+          <img class="img-card img-card-4" src="./images/4.jpg" alt="луффи из аниме ванпис в боксерских перчатках, большим афро на голове, стоит в боксерской стойке">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -264,7 +264,7 @@
           2 спринт: О тех, кто рядом
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-5" src="./images/5.jpg">
+          <img class="img-card img-card-5" src="./images/5.jpg" alt="луффи из аниме ванпис лежит без сознания, перемотанный бинтами">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -316,7 +316,7 @@
           3 спринт: Обходные стратегии
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-6" src="./images/6.jpg">
+          <img class="img-card img-card-6" src="./images/6.jpg" alt="луфи из аниме ванпис в рубашке в красно-белую полоску, улыбается и замотивирован">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -368,7 +368,7 @@
           3 спринт: Когда опускаются руки
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-7" src="./images/7.jpg">
+          <img class="img-card img-card-7" src="./images/7.jpg" alt="луфи из аниме ванпис плачет склонившись к земле">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -420,7 +420,7 @@
           «Сейчас я здесь»
         </h2>
         <div class="img-wrapper">
-          <img class="img-card img-card-8" src="./images/8.jpg">
+          <img class="img-card img-card-8" src="./images/8.jpg" alt="луфи из аниме ванпис сильно озадчен">
           <p class="label">&lt;/html&gt;</p>
         </div>
         <div class="content">
@@ -479,22 +479,25 @@
             class="floppy">
             <use href="./svg/дискета.svg#floppy"></use>
           </svg>
-          <span class="button__text button__text-save">Сохранить на память</span>
+          <span class="button__text button__text-save button__text-open">Сохранить на память</span>
         </button>
       </section> 
     </main>
       <dialog id="dialog-id" class="dialog">
         <div class="save-block">
           <svg 
-            class="floppy">
+            class="floppy-dialog"
+            viewBox="0 0 40 40"
+            width="39"
+            height="39">
             <use href="./svg/дискета.svg#floppy"></use>
           </svg>
-          <h2 class="button__text-save">Вставьте дискету, чтобы продолжить</h2>
+          <h2 class="button__text-save">вставьте дискету, чтобы продолжить</h2>
         </div>
         <form method="dialog">
           <button
             class="buttons save-button-dialog"
-            type="button"
+            type="submit"
             onclick="window['dialog-id'].close();"
             aria-controls="dialog-id"
           >
